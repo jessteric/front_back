@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Splitter</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Bill Splitter</h1>
+    <div class="form-container">
+        <div class="input-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your name">
+            <span class="error-message" id="name-error"></span>
+        </div>
+        <div class="input-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" placeholder="Your email">
+            <span class="error-message" id="email-error"></span>
+        </div>
+        <button id="add-user" class="btn">Add user</button>
+    </div>
+
+    <div class="total-info">
+        <p>Total bill: <span id="total-bill">100</span>€</p>
+        <p>Users to pay: <span id="user-count">0</span></p>
+    </div>
+
+    <div class="table-container">
+        <table id="users-table">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>To pay</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+
+    <button id="reset" class="btn reset-btn">Reset</button>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
